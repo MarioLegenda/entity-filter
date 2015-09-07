@@ -8,9 +8,9 @@ Filters Doctrine enitites and transformers them into arrays. Examples speak for 
 
 ## Basic usage
 
-Let's say we have a `User` entity that has 25 fields in that describe a certain user, like name, lastname,
+Let's say we have a `User` entity that has 25 fields that describe a certain user, like name, lastname,
 social security number etc. If you want only 10 of those fields, you would have to manually call each and
-every method and place them in some variables. Code code is as follows...
+every method and place them in some variables. Code is as follows...
 
 ```
 $user = new User();
@@ -31,8 +31,8 @@ $userData['lastname'] = $user->getName();
 ... 8 remainig fields
 ```
 
-Now, you could say that you can query the database with DQL, but in some cases, you need a clean entity if you
-wish to update the databse, for example. This is the situtation where this tool comes in handy.
+Now, you could say that you can query the database with DQL, but in some cases, you need a clean entity if, for
+example, you wish to update the User to the database. This is the situtation where this tool comes in handy.
 
 ```
 $user = new User();
